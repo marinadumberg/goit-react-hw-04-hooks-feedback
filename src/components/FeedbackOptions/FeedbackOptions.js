@@ -2,9 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import s from "./FeedbackOption.module.css";
 
-const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-  const btns = Object.keys(options);
-
+const FeedbackOptions = ({ btns, onLeaveFeedback }) => {
   return (
     <div className={s.btns}>
       {btns.map((btn, index) => (
